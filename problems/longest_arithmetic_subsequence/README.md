@@ -1,4 +1,6 @@
 # 1027. Longest Arithmetic Subsequence
-🟡Medium🟡
 
-https://leetcode.com/problems/longest-arithmetic-subsequence/
+Difficulty: 🟡Medium🟡
+Completed: []
+Link: https://leetcode.com/problems/longest-arithmetic-subsequence/
+

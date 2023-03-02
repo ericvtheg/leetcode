@@ -1,17 +1,22 @@
-const example1 = [20,1,15,3,10,5,8];
+const example1 = [83,20,17,43,52,78,68,45];
 
 function longestArithSeqLength(nums: number[]): number {
-  const differences: {[x: string]: number} = {};
-  let prevNum = nums[0];
+  let maxDifference = -1;
 
-  for (let i = 1; i < nums.length; i += 1){
-    const curNum = nums[i];
-    const difference = curNum - prevNum;
-    differences[difference] = (differences[difference] ?? 1) + 1;
-    prevNum = curNum;
+  const runThroughs: { [x: string]: { [x: string]: number } } = {};
+  for (let i = 0; i < nums.length; i += 1){
+    let curNum = nums[i];
+    runThroughs[i] = {};
+    
+    for (let j = i + 1; j < nums.length; j += 1){
+      const subNum = nums[j];
+      const difference = curNum - subNum;
+      runThroughs[i][difference] = (runThroughs[i][difference] ?? 1) + 1;
+    }
+    maxDifference = Math.max(...Object.values(runThroughs[i]));
   }
     
-  return Math.max(...Object.values(differences));
+  return maxDifference;
 };
 
 console.log(longestArithSeqLength(example1));
