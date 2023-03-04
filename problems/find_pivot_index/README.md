@@ -1,7 +1,7 @@
 # 724. Find Pivot Index
 
-Difficulty: 🟢Easy🟢
-Completed: [✅]
+Difficulty: 🟢Easy🟢 \
+Completed: [✅] \
 Link: https://leetcode.com/problems/find-pivot-index/description
 
 ## Notes
