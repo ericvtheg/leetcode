@@ -4,3 +4,4 @@ These are problems that I learned from and would like to solidify my understandi
 
 * [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) \
 In place and recursive
+* [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description)
