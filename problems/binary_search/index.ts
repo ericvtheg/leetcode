@@ -2,7 +2,7 @@ function search(nums: number[], target: number): number {
   let left = 0;
   let right = nums.length - 1;
   while (true) {
-    const middleIdx = Math.ceil((right + left) / 2);
+    const middleIdx = left + Math.ceil((right - left) / 2);
     const middleVal = nums[middleIdx];
 
     if (middleVal === target) {
