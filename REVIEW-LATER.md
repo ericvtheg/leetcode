@@ -9,3 +9,4 @@ These are problems that I learned from and would like to solidify my understandi
 * [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/)
 * [394. Decode String](https://leetcode.com/problems/decode-string/description)
 * [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/description)
+* [1863. Sum of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals/description/)
