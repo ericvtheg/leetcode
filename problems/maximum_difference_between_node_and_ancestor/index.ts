@@ -19,7 +19,7 @@ function diff(a: number, b: number) {
 function maxAncestorDiffRecur(
   root: TreeNode | null,
   minAncestor: number,
-  maxAncestor: number
+  maxAncestor: number,
 ): number {
   if (!root) {
     return 0;
@@ -28,7 +28,7 @@ function maxAncestorDiffRecur(
   const curValue = root.val;
   const maxDiff = Math.max(
     diff(minAncestor, curValue),
-    diff(maxAncestor, curValue)
+    diff(maxAncestor, curValue),
   );
 
   const newMinAncestor = Math.min(root.val, minAncestor);
@@ -37,12 +37,12 @@ function maxAncestorDiffRecur(
   const leftMaxDiff = maxAncestorDiffRecur(
     root.left,
     newMinAncestor,
-    newMaxAncestor
+    newMaxAncestor,
   );
   const rightMaxDiff = maxAncestorDiffRecur(
     root.right,
     newMinAncestor,
-    newMaxAncestor
+    newMaxAncestor,
   );
 
   return Math.max(maxDiff, leftMaxDiff, rightMaxDiff);
@@ -60,7 +60,7 @@ function maxAncestorDiff(root: TreeNode | null): number {
   const rightMaxDiff = maxAncestorDiffRecur(
     root.right,
     minAncestor,
-    maxAncestor
+    maxAncestor,
   );
 
   return Math.max(leftMaxDiff, rightMaxDiff);
