@@ -13,27 +13,15 @@ const romans = [
   'CM',
   'M',
 ].reverse();
-const romanValues = {
-  I: 1,
-  IV: 4,
-  V: 5,
-  IX: 9,
-  X: 10,
-  XL: 40,
-  L: 50,
-  XC: 90,
-  C: 100,
-  CD: 400,
-  D: 500,
-  CM: 900,
-  M: 1000,
-};
+const romanValues = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
 
 function intToRoman(num: number): string {
   let romanString = '';
 
-  for (const romanNumeral of romans) {
-    const romanValue = romanValues[romanNumeral];
+  for (let i = 0; i < romans.length; i += 1) {
+    const romanValue = romanValues[i];
+    const romanNumeral = romans[i];
+
     while (romanValue <= num) {
       romanString += romanNumeral;
       num -= romanValue;
