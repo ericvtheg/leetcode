@@ -4,4 +4,4 @@ This repository is meant to track and version control my leetcode solutions.
 
 ## Completed (auto-generated)
 
-99 problems completed since starting this repo
+100 problems completed since starting this repo
