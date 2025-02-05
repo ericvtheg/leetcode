@@ -26,8 +26,8 @@ folder_path="./problems/$folder_name"
 # Create the folder if it doesn't exist
 mkdir -p "$folder_path"
 
-# Generate index.ts file
-index_file="$folder_path/index.ts"
+# Generate index.py file
+index_file="$folder_path/index.py"
 touch "$index_file"
 
 # Generate README.md file
